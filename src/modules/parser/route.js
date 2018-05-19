@@ -7,7 +7,7 @@ var express = require("express");
 var router = express.Router();
 var controller = require("./controller");
 
-router.get("/process-securities", controller.processNSESecurities);
+router.get("/process-nse-securities", controller.processNSESecurities);
 
 
 module.exports = router;
