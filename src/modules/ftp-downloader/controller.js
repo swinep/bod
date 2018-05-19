@@ -4,7 +4,7 @@
 
 var AnyFile = require("any-file");
 var Promise = require("bluebird");
-const gunzip = require('gunzip-file');
+const gunzip = require("gunzip-file");
 
 /**
  * Function to download contract file through ftp
@@ -38,7 +38,7 @@ function downloadFile(src_file, dest_file) {
 function unzipFile(path, output) {
     new Promise(function (resolve, reject) {
         gunzip(path, output, function () {
-            console.log('Successfully unzipped the file ' + path);
+            console.log("Successfully unzipped the file " + path);
             resolve();
         });
     });
